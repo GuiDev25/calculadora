@@ -9,23 +9,24 @@
 </head>
 <body>
   <nav>
-    <h1>Calcule quanto tempo já viveu!</h1>
+    <h1>Calculadora de tempo</h1>
   </nav>
   <header class="conteiner">
+  <h2>Digite sua data de nascimento:</h2>
   <form action="#" method="get" class="formcalc">
     <div class="input-box">
       <label for="dia">Dia:</label>
-      <input type="number" id="dia" placeholder="DD" required>
+      <input type="text" id="dia" placeholder="DD" required maxlength="2">
     </div>
     
     <div class="input-box">
       <label for="mes">Mês:</label>
-      <input type="number" id="mes" placeholder="MM" required>
+      <input type="text" id="mes" placeholder="MM" required maxlength="2">
     </div>
     
     <div class="input-box">
       <label for="ano">Ano:</label>
-      <input type="number" id="ano" placeholder="AA" required>
+      <input type="text" id="ano" placeholder="AA" required maxlength="4">
     </div>
     
   </form>
