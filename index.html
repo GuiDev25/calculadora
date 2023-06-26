@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="assets/estilo.css">
-  <title>Frontend Mentor | Calculadora JS</title>
+  <title>Calculadora JS</title>
 </head>
 <body>
   <nav>
     <h1>Calcule quanto tempo já viveu!</h1>
   </nav>
-  <header>
+  <header class="conteiner">
   <form action="#" method="get" class="formcalc">
     <div class="input-box">
       <label for="dia">Dia</label>
@@ -30,16 +30,22 @@
     
   </form>
   <div class="div-botton">
-    <button class="botao">Calcular</button>
+    <button class="botao" id="btn" onclick="calculo()">Calcular</button>
   </div>
   </header>
   
   <main>
-
+    <div class="result">
+      <h2>Você já viveu:</h2>
+      <p id="dias"> -- </p> Dias
+      <p id="meses"> -- </p> Meses
+      <p id="anos"> -- </p> Anos
+    </div>
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.linkedin.com/in/guilherme-almeida-fernandes/" target="_blank">Gui.Dev</a>.
   </footer>
 </body>
+<script src="script.js"></script>
 </html>
