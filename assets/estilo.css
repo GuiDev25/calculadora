@@ -2,18 +2,79 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: black;
-    color:#fff;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
+    color: #fff;
 }
-a{
-    color: #006eff;
+
+body{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:#0c0c0c;
 }
-button{
-    background-color: #fff;
-    color: #006eff;
-    font-weight: bolder;
-    padding: 8px;
-    border-radius: 5px;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+
+nav h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.formcalc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+.formcalc label{
+    display: flex;
+    flex-wrap: wrap;
+}
+.formcalc input{
+    font-family: "Poppins";
+    padding: 5px;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+}
+.div-botton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.botao{
+    background-color: #6c63ff;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.3rem 6rem;
+    border-radius: 4px;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 11px;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+}
+.attribution a{
+    color: #6c63ff;
 }
