@@ -15,7 +15,7 @@ function calculo(){
     const calcMes = Math.abs(mesAtual - mesEl.value);
     const calcAno = Math.abs(anoAtual - anoEl.value);
 
-    if(anoEl.value>anoAtual || mesEl.value>12 || diaEl.value>31){
+    if(anoEl.value>anoAtual || mesEl.value>=12 || diaEl.value>31){
         alert("Data de nascimento inválida! Por favor digite novamente");
         location.reload();
     }else{
