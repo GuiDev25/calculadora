@@ -8,13 +8,11 @@ function calculo(){
     const dataAtual = new Date();
 
     const diaAtual = dataAtual.getDate();
-    const mesAtual = dataAtual.getMonth();
+    const mesAtual = dataAtual.getMonth()+1;
     const anoAtual = dataAtual.getFullYear();
 
     const calcDia = Math.abs(diaAtual - diaEl.value);
-    //if(mesEl.value>mes){
-        const calcMes = Math.abs(mesAtual - mesEl.value);
-    //}   
+    const calcMes = Math.abs(mesAtual - mesEl.value);
     const calcAno = Math.abs(anoAtual - anoEl.value);
 
     if(anoEl.value>anoAtual || mesEl.value>12 || diaEl.value>31){
